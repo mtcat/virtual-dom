@@ -1,5 +1,10 @@
 const dom = require('./src/index');
 
-dom.el();
-dom.diff();
-dom.patch();
+const tree = dom.el('div', { class: 'wrap' }, [
+  dom.el('p', { class: 'top', style: { color: 'red', 'font-size': '22px' } }, '123123123-1'),
+  dom.el('p', { class: 'center', style: { color: 'green' } }, '123123123-2'),
+  dom.el('p', { class: 'bottom', style: { color: 'blue' } }, '123123123-3'),
+]);
+
+const root = tree.render();
+document.body.appendChild(root);
