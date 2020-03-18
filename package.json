@@ -1,0 +1,22 @@
+{
+  "name": "virtual-dom",
+  "version": "0.0.1",
+  "description": "simple virtual dom implement",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "prebuild": "npm run clean",
+    "build": "parcel build index.html",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "virtual",
+    "dom"
+  ],
+  "author": "mtcat",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2"
+  }
+}
